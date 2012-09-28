@@ -2,7 +2,7 @@ var load_github_user = function(username, callback) {
   $.getJSON('https://api.github.com/users/' + username + '?callback=?', callback);
 }
 
-var participant_view = '<strong>{{name}} from {{location}}</strong> (<a href="{{html_url}}">@{{login}}</a>)<br>{{bio}}'
+var participant_view = '<img src="{{avatar_url}}" style="float: left; width: 100px;"/><strong>{{name}} from {{location}}</strong> (<a href="{{html_url}}">@{{login}}</a>)<br>{{bio}}'
 
 $('#participants li').each( function() {
   var $el  = $(this),
