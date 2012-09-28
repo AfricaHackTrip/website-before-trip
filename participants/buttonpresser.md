@@ -1,7 +1,3 @@
-<img src="https://asset0.37img.com/highrise/4cceecf67ae90f2eb7d1244446a34b016378cbb15b267a0749c7229fd6ba04eb5ee35245939a8fbc519eb5afb74cee99c60fc4a6854d06d83e81a1b2412c93555ade7386d24657af10098cae5b5d5425/avatar.gif?r=3" align="right" style="border: 10px solid #fff">
-Designer & Prototype Engineer at [Granicus](http://www.granicus.com)  
-Github: [buttonpresser](https://github.com/buttonpresser) | Twitter: [peterfecteau](https://twitter.com/peterfecteau)
-
 ### Why do you want to participate?
 
 The Africa Hack Trip is a great way for me to spread my new love of open-source. I love meeting new people in new places and the trip affords me an excellent way to tap into all these passions. My experience with Code for America really got me thinking about ways to envolve the rest of the world in creating a place where we can think and share in new, creative ways. I can't wait to see what come out of the hack-a-thons and better yet, the friends I'm sure to make.

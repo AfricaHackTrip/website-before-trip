@@ -1,7 +1,3 @@
-<img src="http://www.gravatar.com/avatar/24fc194843a71f10949be18d5a692682.png" align="right" style="border: 10px solid #fff">Web Developer, UX Designer, Product guy. Founder at [minutes.io](https://www.minutes.io)  
-Github: [profile](https://github.com/gr2m), [résumé](http://resume.github.com/?gr2m) | Twitter: [@gr2m](https://twitter.com/gr2m)
-  
-  
 ### Why do you want to participate?
 
 I've read Erik Hersman's Article "[From Kenya to Madagascar: The African tech-hub boom](http://www.bbc.co.uk/news/business-18878585)" on bbc and wondered, why I worked with designers and developers from all around the globe, despite Africa. When it comes to Web Developement, Africa is a blank canvas to me. I'd like to change that.
