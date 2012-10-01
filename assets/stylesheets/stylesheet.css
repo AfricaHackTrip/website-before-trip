@@ -205,10 +205,12 @@ ul, ol, dl {
 
 ul li {
   list-style: inside;
+  margin-bottom:20px;
 }
 
 ol li {
   list-style: decimal inside;
+  margin-bottom:20px;
 }
 
 dl dt {
