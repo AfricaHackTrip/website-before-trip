@@ -438,3 +438,9 @@ Small Device Styles
   list-style: none;
   overflow: hidden
 }
+
+#participants li .more-content {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  display: none;
+}
