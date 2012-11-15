@@ -52,7 +52,6 @@ html {
   background: #333 url(../images/noise.png);
 }
 body {
-  border-top: 10px solid #333;
   padding: 20px 0 0;
   box-sizing: border-box;
   color:#eee;
@@ -93,6 +92,12 @@ h1, h2 {
   width: 180px;
   text-align: right;
 }
+h1.inline, h2.inline {
+  float: none;
+  margin: 0;
+  width: auto;
+  text-align: left
+}
 h1 img {
   display: block;
   width: auto;
@@ -100,7 +105,7 @@ h1 img {
   border: 0;
 }
 
-h2 {
+h1, h2 {
   font-size: 32px;
 }
 
