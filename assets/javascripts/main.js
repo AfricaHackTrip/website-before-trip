@@ -18,11 +18,9 @@ function showQuestionaire(event) {
   }
 }
 function scrollToTop(top) {
-  console.log(top)
-  
   window.setTimeout( function() {
-    window.scrollTo(0, top)
-  })
+    window.scrollTo(0, top - 20)
+  }, 100)
 }
 window.onhashchange = showQuestionaire;
 showQuestionaire({})

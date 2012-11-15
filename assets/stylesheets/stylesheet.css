@@ -194,7 +194,7 @@ form {
   padding: 0 0 40px 260px;
 }
 #The_team article {
-  margin: 0 0 20px;
+  margin: 0 0 40px;
 }
 #The_team header {
   height: 80px;
@@ -202,7 +202,7 @@ form {
 }
 #The_team header dl {
   position: absolute;
-  bottom: -8px;
+  bottom: 0;
   left: 100px;
   margin: 0;
 }
@@ -310,13 +310,20 @@ form {
 }
 #The_team article > div {
   display: none;
-  padding: 20px 0 40px 100px;
+  padding: 40px 0 40px 100px;
 }
 #The_team article.more > div {
   display: block;
 }
+#The_team article p {
+  margin-top: 0;
+}
 #The_team article h4 {
   font-weight: bold;
+  float: left;
+  width: 180px;
+  margin-left: -200px;
+  text-align: right
 }
 /*******************************************************************************
 Small Device Styles
