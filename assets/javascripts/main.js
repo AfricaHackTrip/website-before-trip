@@ -5,19 +5,24 @@ function showQuestionaire(event) {
 
   if (location.hash) {
     $(location.hash).addClass('more')
-    window.setTimeout( function() {
-      window.scrollTo(0, $(location.hash).offset().top) 
-    }, 10)
+    scrollToTop( $(location.hash).offset().top )
     
   } else {
     if (event.oldURL) {
       var anchor = event.oldURL.split('#')[1]
 
       if (anchor) {
-        window.scrollTo(0, $('#' + anchor).offset().top) 
+        scrollToTop( $( '#' + anchor).offset().top )
       }
     }
   }
+}
+function scrollToTop(top) {
+  console.log(top)
+  
+  window.setTimeout( function() {
+    window.scrollTo(0, top)
+  })
 }
 window.onhashchange = showQuestionaire;
 showQuestionaire({})

@@ -195,17 +195,35 @@ form {
   height: 80px;
   position: relative;
 }
-#The_team header ul {
+#The_team header dl {
   position: absolute;
   bottom: -8px;
   left: 100px;
   margin: 0;
 }
-#The_team header li {
+#The_team header dt,
+#The_team header dd {
   display: inline;
-  list-style: none;
+  width: auto;
+  float: none;
   margin: 0;
-  width: 100px;
+  font-weight: normal
+}
+#The_team header dt {
+  margin-right: .2em;
+}
+#The_team header dd:after {
+  content: ',';
+}
+#The_team header dd:last-child:after {
+  content: '';
+}
+#The_team header dl a {
+  color: inherit;
+}
+#The_team header dl a:focus,
+#The_team header dl a:hover {
+  text-decoration: underline;
 }
 #The_team img {
   float: left;
@@ -216,7 +234,6 @@ form {
   -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
           box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
 
-
   display: block;
 }
 #The_team h3 {
@@ -226,15 +243,23 @@ form {
   font-weight: normal;
   font-size: .8em;
   padding: .2em .4em;
-  background: #ccc;
   border-radius: 3px;
-  color: rgba(0,0,0,.6);
+  cursor: default;
+  margin-left: .5em;
+
+  background: rgba(255,255,255,.2);
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,.3);
+          box-shadow: 0px 0px 2px 0px rgba(0,0,0,.3);
+  color: #eee;
+  color: rgba(255,255,255,.7);
 }
 #The_team h3 em.developer {
-  background: #bada33;
+  /*background: #bada33;*/
+  background: rgba(127,224,0,.5);
 }
 #The_team h3 em.designer {
-  background: #dec0de;
+  /*background: #dec0de;*/
+  background: rgba(224,0,15,.4);
 }
 #The_team h3 small {
   display: block;
