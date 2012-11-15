@@ -322,8 +322,11 @@ form {
   font-weight: bold;
   float: left;
   width: 180px;
-  margin-left: -200px;
+  margin: 0 0 0 -200px;
   text-align: right
+}
+#The_team article h4 + p {
+  min-height: 50px;
 }
 /*******************************************************************************
 Small Device Styles
