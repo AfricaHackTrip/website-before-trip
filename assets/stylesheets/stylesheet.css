@@ -49,13 +49,13 @@ Theme Styles
 *******************************************************************************/
 
 html {
-  background: #F2F2F2;
+  background: #333 url(../images/noise.png);
 }
 body {
   border-top: 10px solid #333;
   padding: 20px 0 0;
   box-sizing: border-box;
-  color:#373737;
+  color:#eee;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -82,7 +82,7 @@ h1, h2, h3 {
   position: relative;
   z-index: 2;
   font-weight: 700;
-  color:#222222;
+  color:#eee;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
 }
@@ -173,31 +173,6 @@ dl p {
   font-style: italic;
 }
 
-hr {
-  height: 1px;
-  margin-bottom: 40px;
-  border: none;
-  background: url('../images/bg_hr.png') repeat-x center;
-}
-
-table {
-  border: 1px solid #373737;
-  margin-bottom: 20px;
-  text-align: left;
- }
-
-th {
-  font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
-  background: #373737;
-  color: #fff;
- }
-
-td {
-  padding: 10px;
-  border: 1px solid #373737;
- }
-
 form {
   background: #f2f2f2;
   padding: 20px;
@@ -235,6 +210,14 @@ form {
 #The_team img {
   float: left;
   margin: 0 20px 0 0;
+
+  border-radius: 40px;
+
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
+          box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
+
+
+  display: block;
 }
 #The_team h3 {
 }
