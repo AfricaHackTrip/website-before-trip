@@ -315,6 +315,7 @@ form {
 #The_team article > div p,
 #The_team article > div ul {
   padding-bottom: 1em;
+  margin: 0
 }
 #The_team article.more > div {
   display: block;
@@ -331,10 +332,7 @@ form {
   float: left;
   width: 180px;
   margin: 0 0 0 -200px;
-  text-align: right
-}
-#The_team article h4 + * {
-  min-height: 50px;
+  text-align: right;
 }
 /*******************************************************************************
 Small Device Styles
