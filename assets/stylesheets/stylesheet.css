@@ -222,12 +222,12 @@ form {
 }
 #The_team header ul {
   position: absolute;
-  top: 0;
-  right: 0;
-  text-align: right;
+  bottom: -8px;
+  left: 100px;
+  margin: 0;
 }
 #The_team header li {
-  /*display: inline;*/
+  display: inline;
   list-style: none;
   margin: 0;
   width: 100px;
@@ -237,9 +237,6 @@ form {
   margin: 0 20px 0 0;
 }
 #The_team h3 {
-  position: absolute;
-  bottom: 0;
-  left: 100px;
 }
 #The_team h3 em {
   font-style: normal;
@@ -262,6 +259,51 @@ form {
 }
 #The_team h3 i {
   font-style: italic;
+}
+#The_team .toggle {
+  color: #999;
+  opacity: 0;
+  font-weight: bold;
+  font-family: "Arial Black", sans-serif;
+  font-size: 80px;
+  position:absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  text-align: center;
+  line-height: 80px;
+  display: block;
+  z-index: 10;
+
+  -webkit-transition: opacity 0.2s ease-out; 
+     -moz-transition: opacity 0.2s ease-out; 
+       -o-transition: opacity 0.2s ease-out; 
+          transition: opacity 0.2s ease-out; 
+
+}
+#The_team article:hover .toggle {
+  opacity: .5;
+}
+#The_team article .toggle:focus,
+#The_team article .toggle:hover {
+  opacity: 1;
+}
+#The_team .more .toggle.more,
+#The_team .toggle.less {
+  display: none;
+}
+#The_team .more .toggle.less {
+  display: block
+}
+#The_team article > div {
+  display: none;
+  padding: 20px 0 40px 100px;
+}
+#The_team article.more > div {
+  display: block;
+}
+#The_team article h4 {
+  font-weight: bold;
 }
 /*******************************************************************************
 Small Device Styles
