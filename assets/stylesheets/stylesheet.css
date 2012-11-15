@@ -165,12 +165,12 @@ ol li {
 dl dt {
   font-weight: bold;
   float: left;
-  width: 140px;
+  width: 80px;
   text-align: right;
 }
 
 dl dd {
-  margin-left: 160px;
+  margin-left: 100px;
 }
 
 dl p {
