@@ -312,11 +312,19 @@ form {
   display: none;
   padding: 40px 0 40px 100px;
 }
+#The_team article > div p,
+#The_team article > div ul {
+  padding-bottom: 1em;
+}
 #The_team article.more > div {
   display: block;
 }
 #The_team article p {
   margin-top: 0;
+}
+#The_team article ul,
+#The_team article li {
+  margin: 0;
 }
 #The_team article h4 {
   font-weight: bold;
@@ -325,7 +333,7 @@ form {
   margin: 0 0 0 -200px;
   text-align: right
 }
-#The_team article h4 + p {
+#The_team article h4 + * {
   min-height: 50px;
 }
 /*******************************************************************************
