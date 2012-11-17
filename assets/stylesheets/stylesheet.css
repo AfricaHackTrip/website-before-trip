@@ -334,25 +334,21 @@ form {
   margin: 0 0 0 -200px;
   text-align: right;
 }
+
+
+#Hello {
+  font-size: 18px;
+  line-height: 27px;
+}
+#Hello span {
+  background: #222;
+  padding: 6px 0;
+}
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 480px) {
   
-}
-
-
-/*******************************************************************************
-  new shids
-*******************************************************************************/
-#participants li {
-  list-style: none;
-  overflow: hidden
-}
-
-#participants li .more-content {
-  margin-bottom: 1.5em;
-  margin-top: 1.5em;
-  display: none;
 }
