@@ -340,9 +340,12 @@ form {
   font-size: 18px;
   line-height: 27px;
 }
+#Hello p {
+  border-left: 4px solid #222;
+}
 #Hello span {
   background: #222;
-  padding: 6px 0;
+  padding: 4px 4px 4px 0;
 }
 
 /*******************************************************************************
