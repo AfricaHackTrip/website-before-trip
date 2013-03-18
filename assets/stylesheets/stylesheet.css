@@ -63,6 +63,7 @@ body {
 body > div {
   padding: 0 0 40px 260px;
   width: 640px;
+  min-height: 140px;
 }
 body > footer {
   background: #212121;
@@ -346,6 +347,29 @@ form {
 #Hello span {
   background: #222;
   padding: 4px 4px 4px 0;
+}
+
+.logos {
+  text-align: center;
+}
+.logos li {
+  display: inline;
+  list-style: none;
+}
+.logos img {
+  max-width: 200px;
+  max-height: 100px;
+  margin: 20px;
+}
+.logos img.box {
+  border-radius: 5px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
+          box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
+}
+
+#Agenda h3 small {
+  display: block;
 }
 
 /*******************************************************************************
