@@ -191,47 +191,60 @@ form {
 }
 
 
-#The_team {
+#The_team,
+#We_do {
   padding: 0 0 40px 260px;
 }
-#The_team article {
+#The_team article,
+#We_do article {
   margin: 0 0 40px;
 }
-#The_team header {
+#The_team header,
+#We_do header {
   height: 80px;
   position: relative;
 }
-#The_team header dl {
+#The_team header dl,
+#We_do header dl {
   position: absolute;
   bottom: 0;
   left: 100px;
   margin: 0;
 }
 #The_team header dt,
-#The_team header dd {
+#The_team header dd,
+#We_do header dt,
+#We_do header dd {
   display: inline;
   width: auto;
   float: none;
   margin: 0;
   font-weight: normal
 }
-#The_team header dt {
+#The_team header dt,
+#We_do header dt {
   margin-right: .2em;
 }
-#The_team header dd:after {
+#The_team header dd:after,
+#We_do header dd:after {
   content: ',';
 }
-#The_team header dd:last-child:after {
+#The_team header dd:last-child:after,
+#We_do header dd:last-child:after {
   content: '';
 }
-#The_team header dl a {
+#The_team header dl a,
+#We_do header dl a {
   color: inherit;
 }
 #The_team header dl a:focus,
-#The_team header dl a:hover {
+#The_team header dl a:hover,
+#We_do header dl a:focus,
+#We_do header dl a:hover {
   text-decoration: underline;
 }
-#The_team img {
+#The_team img,
+#We_do img {
   float: left;
   margin: 0 20px 0 0;
 
@@ -242,9 +255,11 @@ form {
 
   display: block;
 }
-#The_team h3 {
+#The_team h3,
+#We_do h3 {
 }
-#The_team h3 em {
+#The_team h3 em,
+#We_do h3 em {
   font-style: normal;
   font-weight: normal;
   font-size: .8em;
