@@ -274,6 +274,9 @@ form {
   color: #eee;
   color: rgba(255,255,255,.7);
 }
+#We_do article p {
+  margin-left: 100px;
+}
 #The_team h3 em.developer {
   /*background: #bada33;*/
   background: rgba(127,224,0,.5);
