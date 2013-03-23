@@ -204,43 +204,34 @@ form {
   height: 80px;
   position: relative;
 }
-#The_team header dl,
-#We_do header dl {
+#The_team header dl {
   position: absolute;
   bottom: 0;
   left: 100px;
   margin: 0;
 }
 #The_team header dt,
-#The_team header dd,
-#We_do header dt,
-#We_do header dd {
+#The_team header dd {
   display: inline;
   width: auto;
   float: none;
   margin: 0;
   font-weight: normal
 }
-#The_team header dt,
-#We_do header dt {
+#The_team header dt {
   margin-right: .2em;
 }
-#The_team header dd:after,
-#We_do header dd:after {
+#The_team header dd:after {
   content: ',';
 }
-#The_team header dd:last-child:after,
-#We_do header dd:last-child:after {
+#The_team header dd:last-child:after {
   content: '';
 }
-#The_team header dl a,
-#We_do header dl a {
+#The_team header dl a {
   color: inherit;
 }
 #The_team header dl a:focus,
-#The_team header dl a:hover,
-#We_do header dl a:focus,
-#We_do header dl a:hover {
+#The_team header dl a:hover {
   text-decoration: underline;
 }
 #The_team img,
