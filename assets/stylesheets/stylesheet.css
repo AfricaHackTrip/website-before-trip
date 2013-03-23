@@ -276,6 +276,7 @@ form {
 }
 #We_do article p {
   margin-left: 100px;
+  margin-top: 0;
 }
 #The_team h3 em.developer {
   /*background: #bada33;*/
