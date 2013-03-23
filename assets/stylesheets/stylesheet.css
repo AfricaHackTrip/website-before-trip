@@ -269,6 +269,10 @@ form {
   margin-left: 100px;
   margin-top: 0;
 }
+#We_do article a:hover,
+#We_do article a:focus {
+  color: #fff;
+}
 #The_team h3 em.developer {
   /*background: #bada33;*/
   background: rgba(127,224,0,.5);
