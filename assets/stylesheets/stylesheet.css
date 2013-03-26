@@ -73,10 +73,6 @@ body > footer {
 body > footer p {
   color: #f2f2f2;
 }
-body > footer a:hover {
-  color: #43adff;
-  text-shadow: #0090ff 0px 0px 2px;
-}
 
 h1, h2, h3 {
   position: relative;
@@ -125,13 +121,20 @@ p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #ddd;
   text-shadow: none;
+  background: rgba(0,0,0,.3);
+  padding: 1px 4px;
+  border-radius: 3px;
 }
-
-#main_content a:hover {
-  color: #0069ba;
-  text-shadow: #0090ff 0px 0px 2px;
+#We_do article header > a { /*exception for linked logos*/
+  background: none;
+  padding: 0;
+}
+a:hover,
+a:focus {
+  text-shadow: 0 -1px 0 #000;
+  background: rgba(0,0,0,.5);
 }
 
 em {
@@ -229,10 +232,6 @@ form {
 }
 #The_team header dl a {
   color: inherit;
-}
-#The_team header dl a:focus,
-#The_team header dl a:hover {
-  text-decoration: underline;
 }
 #The_team img,
 #We_do img {
