@@ -54,7 +54,7 @@ html {
 body {
   padding: 0;
   color:#eee;
-  font-size: 16px;
+  font-size: 1em;
   font-family: Ubuntu, sans-serif;
   color: #eee;
   line-height: 1.8em;
@@ -313,6 +313,9 @@ a:focus {
   background: url(../images/countries.png) 2em 100% no-repeat;
   background-size: contain;
 }
+#Nutshell .participants {
+  overflow: hidden;
+}
  #Nutshell .participants ul, 
  #Nutshell .participants li {
   margin: 0;
@@ -321,7 +324,7 @@ a:focus {
 
  #Nutshell .participants li {
   float: left;
-  margin: 0 20px 0 0;
+  margin: 0 1em 1em 0;
   border-radius: 50px;
 
   position: relative;
@@ -586,5 +589,19 @@ Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 480px) {
-  
+  body {
+    font-size: .6em;
+  } 
+}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+  body {
+    font-size: .8em;
+  } 
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 640px) {
+  body {
+    font-size: .9em;
+  } 
 }
