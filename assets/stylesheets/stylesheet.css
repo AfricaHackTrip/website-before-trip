@@ -309,17 +309,17 @@ a:focus {
   background: rgba(0,0,0,.5);
 }
 
-.nutshell {
+ #Nutshell {
   background: url(../images/countries.png) 2em 100% no-repeat;
   background-size: contain;
 }
-.nutshell .participants ul, 
-.nutshell .participants li {
+ #Nutshell .participants ul, 
+ #Nutshell .participants li {
   margin: 0;
   list-style: none;
 }
 
-.nutshell .participants li {
+ #Nutshell .participants li {
   float: left;
   margin: 0 20px 0 0;
   border-radius: 50px;
@@ -329,7 +329,7 @@ a:focus {
   transition: transform 0.5s ease-in;
   -webkit-transition: -webkit-transform 0.5s ease-in;
 }
-.nutshell .participants li:after {
+ #Nutshell .participants li:after {
   content: '';
   display: block;
   position: absolute;
@@ -342,18 +342,18 @@ a:focus {
   box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
   border-radius: 50px;
 }
-.nutshell .participants li a {
+ #Nutshell .participants li a {
   display: block;
   padding: 0;
   background: transparent;
 }
-.nutshell .participants li img {
+ #Nutshell .participants li img {
   display: block;
   border-radius: 50px;
   width: 100px;
   height: 100px;
 }
-.nutshell .participants li:hover {
+ #Nutshell .participants li:hover {
   -webkit-transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   transform: rotate(270deg);
