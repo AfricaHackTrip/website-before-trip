@@ -1,4 +1,5 @@
 Africa Hack Trip
 ==================
 
-http://africahacktrip.org
+[africahacktrip.org](http://africahacktrip.org)
+
