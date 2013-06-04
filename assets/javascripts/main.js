@@ -24,3 +24,19 @@ function scrollToTop(top) {
 }
 window.onhashchange = showQuestionaire;
 showQuestionaire({})
+
+$( function() {
+  if ($(document.body).is('.home')) {
+    window.setInterval( showNextSpace, 5000 )
+  }
+
+  var $spaces = $('.canvas .spaces')
+  function showNextSpace () {
+    var $current = $spaces.find('.active').removeClass('active')
+    if ( $current.next().length ) {
+      $current.next().addClass('active')
+    } else {
+      $current.siblings().eq(0).addClass('active')
+    }
+  }
+});

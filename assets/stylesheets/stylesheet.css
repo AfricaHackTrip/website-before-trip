@@ -163,11 +163,9 @@ body.home > header nav .home a {
 
 /* header */
 .main > .canvas {
-  background: url(../images/spaces/ihub.jpg) 50% 50%;
-  background-size: cover;
   overflow: hidden;
   position: relative;
-  padding: 4em 2em 0 2em;
+  padding: 4em 2em;
   border-bottom: 10px solid #111;
   margin: -2em -2em 2em;
 }
@@ -203,13 +201,45 @@ body.home > header nav .home a {
   background: rgba(0,0,0, .8);
   padding: .4em .4em .45em 0;
 }
-.main > .canvas .info {
-  position: relative;
-  z-index: 2;
-  margin: 6em 0 1em;
-  text-align: right;
+
+.main > .canvas .spaces article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/spaces/ihub.jpg) 50% 50%;
+  background-size: cover;
+  opacity: 0;
+  margin-left: 100%;
+  transition: opacity 1s ease-in-out, margin-left 1s ease-in-out;
 }
-.main > .canvas .info a {
+.main > .canvas .spaces article.active {
+  opacity: 1;
+  margin-left: 0;
+}
+.main > .canvas .spaces article.active ~ article {
+  margin-left: -100%;
+}
+.main > .canvas .spaces .ihub {
+  background-image: url(../images/spaces/ihub.jpg);
+}
+.main > .canvas .spaces .hive-colab {
+  background-image: url(../images/spaces/hive-colab.jpg);
+}
+.main > .canvas .spaces .klab {
+  background-image: url(../images/spaces/klab.jpg);
+}
+.main > .canvas .spaces .kinu {
+  background-image: url(../images/spaces/kinu.jpg);
+}
+.main > .canvas .spaces a {
+  display: block;
+  position: absolute;
+  right: 2em;
+  bottom: 1em;
+  z-index: 2;
+  text-align: right;
   color: #fff;
   font-size: .8em;
   opacity: .7;
@@ -372,12 +402,6 @@ a:focus {
 #We_do header {
   height: 4em;
   position: relative;
-}
-#The_team header dl {
-  position: absolute;
-  bottom: 0;
-  left: 100px;
-  margin: 0;
 }
 #The_team header dt,
 #The_team header dd {
@@ -586,6 +610,13 @@ a:focus {
   margin: 4em 0 0
 }
 
+.header-image img {
+  max-width: 50%;
+  margin: 0 0 1em 1em;
+  float: right;
+  box-shadow: 0 0 3px #000;
+}
+
 /*******************************************************************************
 Small Device Styles
 *******************************************************************************/
@@ -594,6 +625,11 @@ Small Device Styles
   body {
     font-size: .6em;
   } 
+  .header-image img {
+    max-width: 100%;
+    float: none;
+    margin: 1em 0
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 640px) {
