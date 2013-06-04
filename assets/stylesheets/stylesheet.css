@@ -49,46 +49,223 @@ Theme Styles
 *******************************************************************************/
 
 html {
-  background: #333 url(../images/noise.png);
+  background: #212121 url(../images/noise.png);
 }
 body {
-  padding: 20px 0 0;
-  box-sizing: border-box;
+  padding: 0;
   color:#eee;
-  font-size: 16px;
-  font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-size: 1em;
+  font-family: Ubuntu, sans-serif;
+  color: #eee;
+  line-height: 1.8em;
   -webkit-font-smoothing: antialiased;
 }
-body > div {
-  padding: 0 0 40px 260px;
-  width: 640px;
-  min-height: 140px;
+
+h1 {
+  position: absolute;
+  left: -9999px;
 }
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  color: #666;
+  margin-bottom: 2em;
+  padding: 0 0 0 2em;
+  border-left: 3px solid #bbb;
+}
+
+ul, ol, dl {
+  margin-bottom: 1em
+}
+
+dl dt {
+  float: left;
+  width: 10em;
+}
+
+ul li {
+  list-style: inside;
+  margin-bottom:2em;
+}
+
+ol li {
+  list-style: decimal inside;
+  margin-bottom:2em;
+}
+
+
+form {
+  background: #f2f2f2;
+  padding: 2em;
+}
+
+/* nav */
+
+body > header nav h1 a i {
+  display: block;
+  
+  margin: 0;
+  
+  opacity: .9;
+}
+body > header nav {
+  padding: .5em 2em;
+  background: #111 url(../images/noise.png);
+}
+body > header nav ul, 
+body > header nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+body > header nav a {
+  display: block;
+  position: relative;
+  padding: 1em .5em;
+  transition: background-color .2s linear;
+  background: transparent;
+}
+body > header nav a:focus,
+body > header nav a:hover {
+  background-color: rgba(255,255,255,.1);
+}
+body > header nav .home a,
+body > header nav .tanzania a {
+  margin-right: 3em;
+}
+body > header nav .home a {
+  background: url(../images/africahacktrip-logo-w.png) 50% 0 no-repeat !important;
+  background-size: contain !important;
+  width: 5em;
+  text-indent: -999px;
+  opacity: .8;
+  top: .5em;
+
+}
+body > header nav .home a:focus, 
+body > header nav .home a:hover {
+  opacity: 1;
+}
+body.home > header nav .home a {
+  background-color: rgba(255,255,255,.8);
+  color: #111;
+  opacity: 1;
+}
+/* /nav */
+
+/* header */
+.main > .canvas {
+  overflow: hidden;
+  position: relative;
+  padding: 4em 2em;
+  border-bottom: 10px solid #111;
+  margin: -2em -2em 2em;
+}
+.main > .canvas:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -20px;
+  right: -20px;
+  top: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 5px #000;
+  z-index: 1;
+
+  /* circle background gradient */
+  background: -moz-radial-gradient(50% 50%, circle cover, rgba(0,0,0,.2) 0%, rgba(0,0,0,.7) 100%);
+  background: -webkit-radial-gradient(50% 50%, circle cover, rgba(0,0,0,.2) 0%,rgba(0,0,0,.7) 100%);
+  background: -o-radial-gradient(50% 50%, circle cover, rgba(0,0,0,.2) 0%,rgba(0,0,0,.7) 100%);
+  background: -ms-radial-gradient(50% 50%, circle cover, rgba(0,0,0,.2) 0%,rgba(0,0,0,.7) 100%);
+  background: radial-gradient(circle at 50% 50%, rgba(0,0,0,.2) 0%,rgba(0,0,0,.7) 100%);
+}
+.main > .canvas p {
+  position: relative;
+  z-index: 2;
+  font-size: 1.6em;
+  line-height: 2em;
+  margin: 0 0 .5em;
+  border-left: .4em solid rgba(0,0,0, .8);
+  max-width: 40em;
+}
+.main > .canvas span {
+  background: #222;
+  background: rgba(0,0,0, .8);
+  padding: .4em .4em .45em 0;
+}
+
+.main > .canvas .spaces article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../images/spaces/ihub.jpg) 50% 50%;
+  background-size: cover;
+  opacity: 0;
+  margin-left: 100%;
+  transition: opacity 1s ease-in-out, margin-left 1s ease-in-out;
+}
+.main > .canvas .spaces article.active {
+  opacity: 1;
+  margin-left: 0;
+}
+.main > .canvas .spaces article.active ~ article {
+  margin-left: -100%;
+}
+.main > .canvas .spaces .ihub {
+  background-image: url(../images/spaces/ihub.jpg);
+}
+.main > .canvas .spaces .hive-colab {
+  background-image: url(../images/spaces/hive-colab.jpg);
+}
+.main > .canvas .spaces .klab {
+  background-image: url(../images/spaces/klab.jpg);
+}
+.main > .canvas .spaces .kinu {
+  background-image: url(../images/spaces/kinu.jpg);
+}
+.main > .canvas .spaces a {
+  display: block;
+  position: absolute;
+  right: 2em;
+  bottom: 1em;
+  z-index: 2;
+  text-align: right;
+  color: #fff;
+  font-size: .8em;
+  opacity: .7;
+  background: transparent;
+  text-decoration: underline;
+}
+/* /header */
+
+
 body > footer {
-  background: #212121;
-  padding: 20px 0 40px 260px;
-  margin: 80px 0 0;
+  padding: 1em 0 2em 12em;
 }
 body > footer p {
   color: #f2f2f2;
 }
 
-h1, h2, h3 {
+h2, h3 {
   position: relative;
   z-index: 2;
   font-weight: 700;
-  color:#eee;
-  font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
-  letter-spacing: -1px;
+}
+h3 small {
+  display: block;
+  margin: 0 0 1em;
 }
 
-h1, h2 {
-  float: left;
-  margin: 0 0 0 -230px;
-  width: 180px;
-  text-align: right;
-}
 h1.inline, h2.inline {
   float: none;
   margin: 0;
@@ -102,12 +279,14 @@ h1 img {
   border: 0;
 }
 
-h1, h2 {
-  font-size: 32px;
+h2 {
+  font-size: 2em;
+  color: #fff;
+  margin: 0 0 .5em;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.2em;
 }
 h3 small {
   font-size: .8em;
@@ -127,6 +306,27 @@ a {
   padding: 1px 4px;
   border-radius: 3px;
 }
+
+
+.main {
+  background: #333 url(../images/noise.png);
+  padding: 2em 2em 6em;
+}
+.main > .box {
+  min-height: 7em;
+  padding: 0 0 0 12em;
+}
+.main > .box h2 {
+  margin: 0 0 0 -12em;
+  width: 10em;
+  float: left;
+  text-align: right;
+}
+.main > .box article {
+  overflow: hidden;
+  padding: 0 0 2em;
+}
+
 #We_do article header > a { /*exception for linked logos*/
   background: none;
   padding: 0;
@@ -137,81 +337,71 @@ a:focus {
   background: rgba(0,0,0,.5);
 }
 
-em {
-  font-style: italic;
+ #Nutshell {
+  background: url(../images/countries.png) 2em 100% no-repeat;
+  background-size: contain;
+}
+#Nutshell .participants {
+  overflow: hidden;
+}
+ #Nutshell .participants ul, 
+ #Nutshell .participants li {
+  margin: 0;
+  list-style: none;
 }
 
-strong {
-  font-weight: bold;
-}
-
-blockquote {
-  color: #666;
-  margin-bottom: 20px;
-  padding: 0 0 0 20px;
-  border-left: 3px solid #bbb;
-}
-
-ul, ol, dl {
-  margin-bottom: 15px
-}
-
-ul li {
-  list-style: inside;
-  margin-bottom:20px;
-}
-
-ol li {
-  list-style: decimal inside;
-  margin-bottom:20px;
-}
-
-dl dt {
-  font-weight: bold;
+ #Nutshell .participants li {
   float: left;
+  margin: 0 1em 1em 0;
+  border-radius: 50px;
+
+  position: relative;
+
+  transition: transform 0.5s ease-in;
+  -webkit-transition: -webkit-transform 0.5s ease-in;
+}
+ #Nutshell .participants li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0,0,0,0) 0%,rgba(0,0,0,.5) 100%);
+
+  box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
+  border-radius: 50px;
+}
+ #Nutshell .participants li a {
+  display: block;
+  padding: 0;
+  background: transparent;
+}
+ #Nutshell .participants li img {
+  display: block;
+  border-radius: 50px;
   width: 100px;
-  text-align: right;
+  height: 100px;
 }
-
-dl dd {
-  margin-left: 120px;
-}
-
-dl p {
-  padding-left: 20px;
-  font-style: italic;
-}
-
-form {
-  background: #f2f2f2;
-  padding: 20px;
-}
-
-#The_trip {
-  padding: 40px 0 0 260px;
-  height: 280px;
-  background: url(../images/countries.png) 40px 100% no-repeat;
+ #Nutshell .participants li:hover {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  transform: rotate(270deg);
 }
 
 
 #The_team,
-#We_do {
-  padding: 0 0 40px 260px;
+  padding: 0 0 2em 12em;
 }
 #The_team article,
 #We_do article {
-  margin: 0 0 40px;
+  margin: 0 0 2em;
 }
 #The_team header,
 #We_do header {
-  height: 80px;
+  height: 4em;
   position: relative;
-}
-#The_team header dl {
-  position: absolute;
-  bottom: 0;
-  left: 100px;
-  margin: 0;
 }
 #The_team header dt,
 #The_team header dd {
@@ -381,8 +571,50 @@ form {
           box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5);
 }
 
-#Agenda h3 small {
+
+
+.editButton {
+  position: fixed;
+  bottom: 5%;
+  right: -7.2em;
   display: block;
+  background: #111;
+  color: #fff;
+  padding: .5em;
+  padding-right: 3em;
+  line-height: 1em;
+  height: 1em;
+  text-decoration: none;
+  border-radius: .5em;
+  font-size: 1em;
+  box-shadow: 0 1px 1px rgba(0,0,0,.5)
+
+  -webkit-transition:right .1s linear;
+   -moz-transition:right .1s linear;
+     -o-transition:right .1s linear;
+        transition:right .1s linear;
+}
+
+.editButton:focus,
+.editButton:hover {
+  text-decoration: none;
+  color: #fff;
+  right: -1em;
+}
+.editButton:before {
+  content: '✎ ';
+  margin-right: .3em;
+}
+
+#disqus_thread {
+  margin: 4em 0 0
+}
+
+.header-image img {
+  max-width: 50%;
+  margin: 0 0 1em 1em;
+  float: right;
+  box-shadow: 0 0 3px #000;
 }
 
 /*******************************************************************************
@@ -390,5 +622,24 @@ Small Device Styles
 *******************************************************************************/
 
 @media screen and (max-width: 480px) {
-  
+  body {
+    font-size: .6em;
+  } 
+  .header-image img {
+    max-width: 100%;
+    float: none;
+    margin: 1em 0
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 640px) {
+  body {
+    font-size: .8em;
+  } 
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 640px) {
+  body {
+    font-size: .9em;
+  } 
 }
