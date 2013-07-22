@@ -572,6 +572,17 @@ a:focus {
 }
 
 
+#chapter-meta dd {
+  margin-left: 11em;
+}
+#chapter-meta ul {
+  margin-bottom: 0;
+}
+#chapter-meta li {
+  list-style: disc outside;
+  margin-bottom: 0;
+}
+
 
 .editButton {
   position: fixed;
