@@ -286,11 +286,12 @@ h1 img {
 h2 {
   font-size: 2em;
   color: #fff;
-  margin: 0 0 .5em;
+  margin: 0.5em 0;
 }
 
 h3 {
   font-size: 1.3em;
+  margin: 0.3em 0;
 }
 h3 small {
   font-size: .8em;
