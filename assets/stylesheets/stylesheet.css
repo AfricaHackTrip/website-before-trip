@@ -94,6 +94,10 @@ ul li {
   list-style: inside;
   margin-bottom:2em;
 }
+#supportes ul li {
+  margin-bottom: 0px
+}
+
 
 ol li {
   list-style: decimal inside;
@@ -286,7 +290,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 h3 small {
   font-size: .8em;
